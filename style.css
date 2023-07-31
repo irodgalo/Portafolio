@@ -1,31 +1,34 @@
-/*Cambios mios*/
-
-.btn-info{
-  background-color:#F4D35E ;
-  border-color: #D77A61;
-}
-
-.btn-info:hover{
-  background-color:#D77A61;
-  border-color: #F4D35E;
-}
-
-
 /* Barra de navegacion */
 
 .navbar {
   padding: 2rem;
   background-color: #f5f6f7;
+  font-family: 'Raleway', sans-serif;
+  font-size: larger;
 }
+
+
 
 .navbar-collapse {
   align-items: center;
   justify-content: space-between;
 
+
 }
 
+.nav-link{
+  color: #7f6A93;
+}
+
+.nav-link:hover{
+  color:#91BDDF;
+}
+
+
+.contacto{background-color: #584e4e;}
+
 #typewriter{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Raleway', sans-serif;
   
 }
 /* Estilos generales */
@@ -59,8 +62,9 @@ h1 {
 }
 
 .seccion-descripcion {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #584e4e;
+  font-family: 'Raleway', sans-serif;
 }
 
 .seccion-texto {
@@ -70,10 +74,13 @@ h1 {
 .btn-info {
   font-size: 1.1rem;
   margin: 20px;
+  background-color:#F4D35E ;
+  border-style: none;
+  color: #f5f6f7;
 }
-
-.texto-negro {
-  color: black;
+.btn-info:hover{
+  background-color:#7f6A93;
+  color: #f5f6f7;
 }
 
 .texto-blanco {
@@ -90,7 +97,9 @@ h1 {
 
 .hero-principal {
   padding: 3rem;
+  color: #D77A61;
 }
+
 
 .hero-imagen-desarrollador {
   width: 200px;
@@ -98,10 +107,13 @@ h1 {
   margin: 20px;
 }
 
-.hero-principal h2 {
+.hero-principal h2{
   font-size: 1.5rem;
-  color: #615151;
+  font-family: 'Raleway', sans-serif;
+  
 }
+
+
 
 /* Sobre mi */
 
@@ -128,7 +140,9 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  justify-content: flex-start;
   transition: all 0.2s ease-in;
+  color: #D77A61;
 }
 
 
@@ -147,8 +161,13 @@ h1 {
 
 .experiencia-titulo {
   font-size: 25px;
-  font-weight: bold;
   margin: 10px 0;
+  font-family: 'Marcellus', serif;
+}
+
+p{
+  font-family: 'Raleway', sans-serif;
+  font-size: larger;
 }
 
 .badges-contenedor {
@@ -157,15 +176,26 @@ h1 {
   margin: 10px 0;
 }
 
-.badge {
-  margin: 5px;
-  
-}
-.text-bg-primary{
-  background-color: black;
+.lista{
+  list-style:none;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
+.lista li{
+  padding-right: 20px;
+}
 /* Proyectos */
+.texto-negro{
+  color: #91BDDF;
+}
+
+.seccion-descripcion{
+  color:#91BDDF;
+}
 
 .proyectos-recientes {
   padding: 40px;
@@ -199,6 +229,8 @@ h1 {
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 0;
+  font-family: 'Marcellus', serif;
+  color: #7f6A93;
 }
 
 .proyecto {
@@ -219,13 +251,16 @@ h1 {
 }
 
 .overlay i {
-  color: rgb(196, 109, 109);
+  color: #7f6A93;
   font-size: 60px;
   margin: 10px;
 
 }
 
-
+.mas {
+  margin-bottom: 150px;
+  font-family: 'Raleway', sans-serif;
+}
 
 /* Contacto */
 
@@ -238,7 +273,7 @@ h1 {
 }
 
 .contacto .rectangulo {
-  margin-top: -5rem;
+  margin-top: -12rem;
   background-color:#D77A61;
   border-radius: 10px;
   box-shadow: 0px 1px 4px 1px white;
@@ -255,6 +290,7 @@ h1 {
 .contacto .descripcion {
   color: white;
   font-size: 1.2rem;
+  font-family: 'Raleway', sans-serif;
 }
 
 .contacto button {
@@ -337,6 +373,10 @@ footer {
   padding: 20px;
 }
 
+.footer-texto{
+  font-family: 'Marcellus', serif;
+}
+
 /* Adaptable (Responsivo) */
 
 @media screen and (max-width: 400px) {
@@ -355,19 +395,11 @@ footer {
   }
 }
 
-@media screen and (max-width: 800px) {
-  .testimonio-imagen {
-    height: 120px;
-    width: 120px;
-  }
-
-  .testimonio-texto {
-    font-size: 18px;
-  }
-}
 
 @media screen and (min-width: 700px) {
   .hero-inferior-imagen {
     max-width: 600px;
   }
 }
+
+
